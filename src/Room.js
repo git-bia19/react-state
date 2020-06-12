@@ -9,7 +9,7 @@ function Room(){
     return(
          <div className= {`room ${isON ? "lit" : "dark" }`}>
 
-         This room is {!isON? "lit" : "dark"}
+         This room is {isON? "lit" : "dark"}
          <br></br>
          <button  onClick={()=>setON(!isON)}>ON </button>
          <button  onClick={()=>setON(!isON)}>OFF</button>
